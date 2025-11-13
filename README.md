@@ -34,17 +34,19 @@ All files for the video conference QoE assignment:
 Files for the video QoE assignment:
 
 - **netflix.pcap** (22 MB) - Netflix video streaming traffic capture
+- **netflix_session.pkl** (1.6 KB) - Preprocessed Netflix session data
+- **video_dataset.pkl.xz** (61 MB, compressed) - Main video quality dataset
 
-**Large Dataset File (separate download required):**
+**Decompressing the Dataset:**
 
-The main dataset file `video_dataset.pkl` (105 MB) exceeds GitHub's file size limits and must be downloaded separately from Google Drive:
+The `video_dataset.pkl.xz` file is compressed with xz to reduce size. Decompress it before use:
 
 ```bash
-# Download video_dataset.pkl (105 MB)
-curl -L "https://drive.usercontent.google.com/download?id=1iI1tos08p9FJBI-ADR9b_iFObWRwXANX&export=download&confirm=t" -o video_dataset.pkl
+# Decompress to get video_dataset.pkl (265 MB)
+xz -d video_dataset.pkl.xz
 ```
 
-This file contains 4000 video sessions from Netflix, YouTube, Twitch, and Amazon Prime Video for training video quality inference models.
+This dataset contains 204,713 samples with 170 features from Netflix, YouTube, Twitch, and Amazon Prime Video sessions for training video quality inference models.
 
 ## Usage
 
