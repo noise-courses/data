@@ -35,18 +35,25 @@ Files for the video QoE assignment:
 
 - **netflix.pcap** (22 MB) - Netflix video streaming traffic capture
 - **netflix_session.pkl** (1.6 KB) - Preprocessed Netflix session data
-- **video_dataset.pkl.xz** (61 MB, compressed) - Main video quality dataset
+- **netflix_dataset.pkl.xz** (22 MB, compressed) - Netflix-only video quality dataset
+- **video_dataset.pkl.xz** (61 MB, compressed) - Multi-service video quality dataset
 
-**Decompressing the Dataset:**
+**Dataset Details:**
 
-The `video_dataset.pkl.xz` file is compressed with xz to reduce size. Decompress it before use:
+1. **netflix_dataset.pkl**: 52,279 samples with 251 features - Netflix-only data
+2. **video_dataset.pkl**: 204,713 samples with 170 features - Multi-service data (Netflix, YouTube, Twitch, Amazon Prime Video)
+
+**Decompressing the Datasets:**
+
+The compressed `.xz` files must be decompressed before use:
 
 ```bash
-# Decompress to get video_dataset.pkl (265 MB)
-xz -d video_dataset.pkl.xz
-```
+# Decompress netflix_dataset (105 MB uncompressed)
+xz -d video-qoe/netflix_dataset.pkl.xz
 
-This dataset contains 204,713 samples with 170 features from Netflix, YouTube, Twitch, and Amazon Prime Video sessions for training video quality inference models.
+# Decompress video_dataset (265 MB uncompressed)
+xz -d video-qoe/video_dataset.pkl.xz
+```
 
 ## Usage
 
