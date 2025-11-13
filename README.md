@@ -4,7 +4,7 @@ This repository contains datasets used across various Noise Lab courses. The dat
 
 ## Contents
 
-### Anomaly Detection (`data/anomaly-detection/`)
+### Anomaly Detection (`anomaly-detection/`)
 
 All files for the anomaly detection assignment:
 
@@ -15,6 +15,19 @@ All files for the anomaly detection assignment:
 - **nestcam_live.pcap** (9.7 MB) - Nest camera traffic with livestream and motion detection
 - **nestcam_live_labels.txt** - Event timestamps (livestream, motion detection)
 - **tplink_switch.pcap** (52 KB) - TP-Link smart switch traffic
+
+### Latency Geo-Clustering (`latency-geo-clustering/`)
+
+All files for the latency geo-clustering assignment:
+
+- **Chicago_speedtests.csv** (23.7 MB) - Ookla speed test measurements from Chicago (January 2022 - May 2023), Comcast subscribers only
+- **City_boundaries.csv** (484 KB) - Chicago city boundary data for spatial analysis
+
+### Video Conference QoE (`video-conference-qoe/`)
+
+All files for the video conference QoE assignment:
+
+- **teams.csv** (32 MB) - Microsoft Teams video conference traffic data
 
 ## Usage
 
