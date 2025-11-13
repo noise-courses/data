@@ -29,6 +29,23 @@ All files for the video conference QoE assignment:
 
 - **teams.csv** (32 MB) - Microsoft Teams video conference traffic data
 
+### Video QoE (`video-qoe/`)
+
+Files for the video QoE assignment:
+
+- **netflix.pcap** (22 MB) - Netflix video streaming traffic capture
+
+**Large Dataset File (separate download required):**
+
+The main dataset file `video_dataset.pkl` (105 MB) exceeds GitHub's file size limits and must be downloaded separately from Google Drive:
+
+```bash
+# Download video_dataset.pkl (105 MB)
+curl -L "https://drive.usercontent.google.com/download?id=1iI1tos08p9FJBI-ADR9b_iFObWRwXANX&export=download&confirm=t" -o video_dataset.pkl
+```
+
+This file contains 4000 video sessions from Netflix, YouTube, Twitch, and Amazon Prime Video for training video quality inference models.
+
 ## Usage
 
 Clone this repository to access the datasets:
