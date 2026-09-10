@@ -34,7 +34,7 @@ All files for the video conference QoE assignment:
 Files for the video QoE assignment:
 
 - **netflix.pcap** (22 MB) - Netflix video streaming traffic capture
-- **netflix_session.pkl** (1.6 KB) - Preprocessed Netflix session data
+- **netflix_session.pkl** (130 KB) - One preprocessed Netflix session: 59 ten-second windows x 251 features (same schema as netflix_dataset.pkl), with ground-truth `resolution`. Used in Part 3 of the video QoE assignment.
 - **netflix_dataset.pkl.xz** (22 MB, compressed) - Netflix-only video quality dataset
 - **video_dataset.pkl.xz** (61 MB, compressed) - Multi-service video quality dataset
 
@@ -64,6 +64,12 @@ git clone https://github.com/noise-courses/data.git
 ```
 
 Then reference the data in your assignments using the appropriate paths.
+
+Or fetch a single file without cloning:
+
+```bash
+wget https://raw.githubusercontent.com/noise-courses/data/main/video-qoe/netflix.pcap
+```
 
 ## Attribution
 
