@@ -1,8 +1,15 @@
-1:45:00, asked "What is the time"
-1:45:25, response completed
-1:47:00, asked "What is the time"
-1:47:25, response completed
-1:51:00, started playing music
-1:53:00, stopped playing music
-1:55:00, started playing music
-1:57:00, stopped playing music
+16:12:35, asked "What is the time" (three attempts; the device had just restarted)
+16:12:57, response completed
+16:13:15, voice interaction (not in the original log)
+16:13:29, response completed
+16:14:02, asked "What is the time"
+16:14:06, response completed
+16:15:29, voice interaction (not in the original log)
+16:16:00, response completed
+16:16:31, voice interaction (not in the original log)
+16:17:13, response completed
+16:17:49, asked to play music
+16:18:01, started playing music
+16:19:42, stopped playing music
+16:22:03, asked to play music (three attempts; no music stream followed)
+16:22:37, response completed
