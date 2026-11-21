@@ -23,6 +23,15 @@ All files for the latency geo-clustering assignment:
 - **Chicago_speedtests.csv** (23.7 MB) - Ookla speed test measurements from Chicago (January 2022 - May 2023), Comcast subscribers only
 - **City_boundaries.csv** (484 KB) - Chicago city boundary data for spatial analysis
 
+### Performance Anomalies (`performance-anomalies/`)
+
+FCC Measuring Broadband America active measurements (March 2022) for the PCA / performance-anomalies assignment; see `performance-anomalies/README.md` for column names (three files have no header row):
+
+- **curr_httpgetmt.csv.gz** (23 MB) - Multi-threaded HTTP download speed tests
+- **curr_ping.csv.gz** (0.9 MB) - Latency tests
+- **curr_webget.csv.gz** (35 MB) - Web page fetch tests
+- **curr_dns_small.csv.gz** (17 MB) - DNS lookup tests
+
 ### Video Conference QoE (`video-conference-qoe/`)
 
 All files for the video conference QoE assignment:
